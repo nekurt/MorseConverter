@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.8)
 project(MorseConverter)
 
 set(CMAKE_CXX_STANDARD 14)
+#set(CMAKE_PREFIX_PATH "/Users/nekurt/Qt/5.15.0/clang_64/lib/cmake/Qt5")
 
 include(GenerateExportHeader)
 
