@@ -11,15 +11,15 @@ namespace Logic
 {
     class IConverter;
     
-    class Model : public QObject
+    class MORSECONVERTER_LOGIC_API Model : public QObject
     {
         Q_OBJECT
 
         public:
-            MORSECONVERTER_LOGIC_API Model(std::unique_ptr<IConverter> i_converter, QObject* ip_parent = nullptr);
-            MORSECONVERTER_LOGIC_API ~Model() override;
+            Model(std::unique_ptr<IConverter> i_converter, QObject* ip_parent = nullptr);
+            ~Model() override;
 
-            MORSECONVERTER_LOGIC_API void Convert(const QString& i_text) const;
+            void Convert(const QString& i_text) const;
 
         signals:
             void textConverted(QString i_text_converted) const;
